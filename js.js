@@ -1,6 +1,13 @@
 $(document).ready(function () {
     myNewWindow = window.open();
     int seconds = 60;
+    
+    while(seconds>0) {
+          $('#time').text(seconds);
+          sleep(1000);
+          seconds--;
+        }
+        
     $('#time').text(seconds);
     
     function messageReceived(e) {
