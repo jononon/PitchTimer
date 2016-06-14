@@ -1,6 +1,6 @@
 $(document).ready(function () {
     myNewWindow = window.open();
-    int seconds = 60;
+    var seconds = 60;
     
     while(seconds>0) {
           $('#time').text(seconds);
