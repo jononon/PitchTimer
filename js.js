@@ -10,24 +10,15 @@ $(document).ready(function () {
             seconds--;
     }, 1000);
     
-    function messageReceived(e) {
-    if(data=='reset') {
-        seconds=60;
-        active = false;
-    }
-    else if (data=='stop')
-        active = false;
-    else if (data=='start')
-        active = true;
-  
-      if(data=="start") {
-        while(data!="stop" && seconds>0) {
-          $('#time').text(seconds);
-          sleep(1000);
-          seconds--;
+    window.updateTimer(e) {
+        if(data=='reset') {
+            seconds=60;
+            active = false;
         }
-      }
-
+        else if (data=='stop')
+            active = false;
+        else if (data=='start')
+            active = true;
     }
 
 });
