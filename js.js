@@ -10,7 +10,7 @@ $(document).ready(function () {
             seconds--;
     }, 1000);
     
-    window.updateTimer(e) {
+    window.updateTimer = function (e) {
         if(data=='reset') {
             seconds=60;
             active = false;
