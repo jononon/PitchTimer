@@ -11,13 +11,13 @@ $(document).ready(function () {
     }, 1000);
     
     window.updateTimer = function (e) {
-        if(data=='reset') {
+        if(e=='reset') {
             seconds=60;
             active = false;
         }
-        else if (data=='stop')
+        else if (e=='stop')
             active = false;
-        else if (data=='start')
+        else if (e=='start')
             active = true;
     }
 
