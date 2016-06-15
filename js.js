@@ -25,5 +25,9 @@ $(document).ready(function () {
         else if (e=='start')
             active = true;
     }
+    
+    window.updateTimerLength = function (e) {
+        resetLength = parseInt(e);
+    }
 
 });
