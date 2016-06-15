@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    function sleep(delay) {
+        var start = new Date().getTime();
+        while (new Date().getTime() < start + delay);
+    }
+    
     myNewWindow = window.open();
     var seconds = 60;
     
