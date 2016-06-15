@@ -2,7 +2,7 @@ $(document).ready(function () {
     var active = false;
     var seconds = 60;
     
-    myNewWindow = window.open(timer.html);
+    myNewWindow = window.open("timer.html");
     
     setInterval(function(){ 
         $('#time').text(seconds);
