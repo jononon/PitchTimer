@@ -6,6 +6,8 @@ $(document).ready(function () {
     
     setInterval(function(){ 
         $('#time').text(seconds);
+        if(seconds<=10)
+            $("p").css("color", "rgb(198, 27, 23)");
         if(active && seconds>0)
             seconds--;
     }, 1000);
