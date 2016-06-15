@@ -8,6 +8,8 @@ $(document).ready(function () {
         $('#time').text(seconds);
         if(seconds<=10)
             $("#time").css("color", "rgb(198, 27, 23)");
+        else
+            $("#time").css("color", "black");
         if(active && seconds>0)
             seconds--;
     }, 1000);
