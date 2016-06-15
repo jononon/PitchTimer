@@ -11,8 +11,6 @@ $(document).ready(function () {
     }, 1000);
     
     function messageReceived(e) {
-
-     var data = e.data;
     if(data=='reset') {
         seconds=60;
         active = false;
@@ -32,8 +30,4 @@ $(document).ready(function () {
 
     }
 
-    if(window.addEventListener)
-        window.addEventListener('message', messageReceived);
-    else
-        window.attachEvent('onmessage', messageReceived);
 });
