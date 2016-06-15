@@ -1,6 +1,7 @@
 $(document).ready(function () {
     var active = false;
-    var seconds = 15;
+    var resetlength = 60;
+    var seconds = resetlength;
     
     myNewWindow = window.open("timer.html");
     
@@ -16,7 +17,7 @@ $(document).ready(function () {
     
     window.updateTimer = function (e) {
         if(e=='reset') {
-            seconds=60;
+            seconds=resetlength;
             active = false;
         }
         else if (e=='stop')
