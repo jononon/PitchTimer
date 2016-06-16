@@ -7,7 +7,7 @@ $(document).ready(function () {
     
     setInterval(function(){
         if(seconds>60)
-            $('#time').text(""+parseInt(seconds/60)+":"+seconds%60<10?"0"+seconds%60:seconds%60);
+            $('#time').text(""+parseInt(seconds/60)+":"+((seconds%60<10)?("0"+seconds%60):(seconds%60)));
         else
             $('#time').text(seconds);
             
