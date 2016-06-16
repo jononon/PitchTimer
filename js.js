@@ -1,12 +1,16 @@
 $(document).ready(function () {
     var active = false;
-    var resetlength = 60;
+    var resetlength = 300;
     var seconds = resetlength;
     
     myNewWindow = window.open("timer.html");
     
-    setInterval(function(){ 
-        $('#time').text(seconds);
+    setInterval(function(){
+        if(seconds>60)
+            $('#time').text(""+parseInt(seconds/60)+":"+seconds%60);
+        else
+            $('#time').text(seconds);
+            
         if(seconds<=10)
             $("#time").css("color", "rgb(198, 27, 23)");
         else
