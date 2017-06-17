@@ -8,10 +8,10 @@ $(document).ready(function () {
     setInterval(function(){
         if(seconds>60) {
             $('#time').text(""+parseInt(seconds/60)+":"+((seconds%60<10)?("0"+seconds%60):(seconds%60)));
-            myNewWindow.$('#timemonitor').text(""+parseInt(seconds/60)+":"+((seconds%60<10)?("0"+seconds%60):(seconds%60)));
+            $(myNewWindow.document).contents().find('#timemonitor').text(""+parseInt(seconds/60)+":"+((seconds%60<10)?("0"+seconds%60):(seconds%60)));
         } else {
             $('#time').text(seconds);
-            myNewWindow.$('#timemonitor').text(seconds);
+            $(myNewWindow.document).contents().find('#timemonitor').text(seconds);
         }
             
         if(seconds<=10)
