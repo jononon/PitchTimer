@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var active = false;
     var resetlength = 60;
-    var reset2length = 120;
     var seconds = resetlength;
     
     myNewWindow = window.open("timer.html");
@@ -21,12 +20,12 @@ $(document).ready(function () {
     }, 1000);
     
     window.updateTimer = function (e) {
-        if(e=='reset') {
-            seconds=resetlength;
+        if(e=='resetten') {
+            seconds=60*10;
             active = false;
         }
-        else if(e=='reset2'){
-            seconds=reset2length;
+        else if(e=='resetfive') {
+            seconds = 60*5;
             active = false;
         }
         else if (e=='stop')
