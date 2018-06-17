@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var active = false;
-    var resetlength = 60;
+    var resetlength = 420;
     var seconds = resetlength;
     
     myNewWindow = window.open("timer.html");
