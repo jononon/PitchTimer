@@ -24,7 +24,7 @@ $(document).ready(function () {
     
     window.updateTimer = function (e) {
         if(e=='resetten') {
-            seconds=60*7;
+            seconds=60*1;
             active = false;
         }
         else if(e=='resetfive') {
