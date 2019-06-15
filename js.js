@@ -24,11 +24,11 @@ $(document).ready(function () {
     
     window.updateTimer = function (e) {
         if(e=='resetten') {
-            seconds=60*1;
+            seconds=60*6;
             active = false;
         }
         else if(e=='resetfive') {
-            seconds = 60*5;
+            seconds = 60*4;
             active = false;
         }
         else if (e=='stop')
